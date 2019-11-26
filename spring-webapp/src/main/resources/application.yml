@@ -1,0 +1,14 @@
+
+spring:
+  h2:
+    console:
+      enabled: true
+
+  datasource:
+    url: jdbc:h2:file:./target/h2db/db/testdb;DB_CLOSE_DELAY=-1
+    username: testdb
+    password:
+  security:
+    user:
+      password: password
+      name: user
