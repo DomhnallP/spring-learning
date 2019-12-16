@@ -68,15 +68,12 @@ public class Author {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Author author = (Author) o;
-        return Objects.equals(id, author.id) &&
-                Objects.equals(firstName, author.firstName) &&
-                Objects.equals(lastName, author.lastName) &&
-                Objects.equals(books, author.books);
+        return Objects.equals(id, author.id);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(id, firstName, lastName, books);
+        return Objects.hash(id);
     }
 
     @Override
